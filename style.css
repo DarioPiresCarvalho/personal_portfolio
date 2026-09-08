@@ -1,17 +1,81 @@
-.header {
-    background-color: white;
-    display: flex;
-    box-sizing: content-box;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px auto;
-    padding: 0px 20px;
-    width: auto;
-    height: 50px;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    flex: 1;
+    box-sizing: content-box;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, white , #1b76de);
+    color: #011e40;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #011e40;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: #011e40;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #1b76de;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer {
+    text-align: center;
+    background-color: #1b76de ;
+    color: white;
+    font-style: ;
 }
 
 a {
@@ -29,28 +93,15 @@ a {
 
 .right {
     display: flex;
-    gap: 10px
-}
-
-body {
-    margin: 0px
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
 }
 
 .content {
     width: 600px;
-
 }
 
-.about {
-    box-sizing: content-box;
-    display: flex;
-    padding: 100px;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: linear-gradient(to bottom, white , #1b76de);
-    color: #011e40;
-
-}
 
 .profile-picture {
     border-radius: 300px;
