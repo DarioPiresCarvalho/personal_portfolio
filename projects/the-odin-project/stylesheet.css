@@ -10,6 +10,12 @@ body {
     flex-direction: column;
 }
 
+.main-body {
+    display: flex;
+    background-image: linear-gradient(to bottom, white , #1b76de);
+    color: #011e40;
+}
+
 .header {
     background-color: white;
     display: flex;
@@ -78,4 +84,20 @@ a {
     gap: 10px;
     align-items: center;
     font-size: 16px;
+}
+
+.about {
+    text-align: center;
+}
+
+
+#choices {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px
+}
+
+.rock, .paper, .scissors {
+    padding: 20px;
 }
