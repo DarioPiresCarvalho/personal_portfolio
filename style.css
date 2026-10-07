@@ -1,13 +1,13 @@
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 0px auto;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    background-color: #ebf7ff;
 }
 
 .header {
@@ -24,12 +24,13 @@ body {
     flex: 1;
     box-sizing: content-box;
     display: flex;
-    padding: 100px;
+    flex-direction: column;
+    padding: 50px;
     justify-content: center;
     gap: 40px;
     align-items: center;
-    background-image: linear-gradient(to bottom, white , #1b76de);
     color: #011e40;
+    text-align: center;
 }
 
 .dropdown {
@@ -73,7 +74,8 @@ body {
 
 .footer {
     text-align: center;
-    background-color: #1b76de ;
+    /* background-color: #1b76de ; */
+    background-color: #011e40 ;
     color: white;
 }
 
@@ -98,10 +100,53 @@ a {
 }
 
 .content {
-    width: 600px;
+    margin: 10px auto;
 }
 
 
 .profile-picture {
     border-radius: 300px;
+    transition: 2s;
+}
+
+.profile-picture:hover {
+    transform: rotateY(360deg);
+}
+
+
+
+.test {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.px200px {
+    margin: 0;
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #1b76de;
+}
+
+
+.px600px {
+    margin: 0;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #011e40;
+}   
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.stretch {
+    flex: auto;
 }
