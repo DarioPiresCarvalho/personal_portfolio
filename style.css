@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,33 +11,36 @@ html, body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
     display: flex;
     flex-direction: column;  
     background-color: #ebf7ff;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", sans-serif;
+}
+
 .header {
     background-color: white;
     display: flex;
-    box-sizing: content-box;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 25px 100px;
     justify-content: space-between;
     align-items: center;
 }
 
 .about {
     flex: 1;
-    box-sizing: content-box;
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    padding: 50px 100px;
     justify-content: center;
     gap: 40px;
     align-items: center;
     color: #011e40;
-    text-align: center;
+    text-align: left;
 }
 
 .dropdown {
@@ -78,7 +84,6 @@ body {
 
 .footer {
     text-align: center;
-    /* background-color: #1b76de ; */
     background-color: #011e40 ;
     color: white;
 }
@@ -151,9 +156,18 @@ a {
 
 }
 
+.text-box h3 {
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
 .text-box small {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    margin: 10px 0px;
 }
 
 
@@ -194,7 +208,7 @@ a {
 .left-container-arrow {
     width: 0;
     height: 0;
-    top: 28px;
+    top: 32px;
     position: absolute;
     z-index: 1;
     border-top: 15px solid transparent;
@@ -206,7 +220,7 @@ a {
 .right-container-arrow {
     width: 0;
     height: 0;
-    top: 28px;
+    top: 32px;
     position: absolute;
     z-index: 1;
     border-top: 15px solid transparent;
@@ -217,11 +231,13 @@ a {
 
 
 
+.center {
+    text-align: center;
+}
 
-
-
-
-
+.padding50 {
+    padding: 50px
+}
 
 
 
@@ -302,6 +318,11 @@ a {
     border: solid 3px #fec78a;
     border-radius: 10px;
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 600px) {
