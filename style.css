@@ -119,7 +119,7 @@ a {
 }
 
 .content {
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 
@@ -336,10 +336,57 @@ a {
 }
 
 
+.flex {
+    display: flex;
+}
+
 #rock-paper-scissors {
     text-align: center;
     background-color: #004066;
 }
+
+
+#etch-a-sketch {
+    h1 {
+    text-align: center;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    p{
+        margin: 0px;
+    }
+
+    #container {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        box-sizing: border-box;
+    }
+
+    .changeGrid {
+        display: block;
+    }
+}
+
 
 
 

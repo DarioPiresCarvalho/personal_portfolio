@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <script src="./projects/the-odin-project/Rock_Paper_Scissors/myscript.js" defer></script>
+        <script src="./projects/the-odin-project/etch-a-sketch/script.js" defer></script>
         <title>Home</title>
     </head>
 
@@ -140,16 +141,49 @@
                     </div>
                 </div>
 
-                <div id="rock-paper-scissors" class="project margin50">
-                    <h2 class="text-2xl">Rock-Paper-Scissors</h2>
-                    <div class="gameplay">
-                        <div id = 'choices'></div>
-                        <div id = 'rounds'></div>
-                        <div id = 'winner'></div>
-                     </div>
+                <div class="project margin50 flex">
+                    <div class="px200px">
+                        <h2 class="text-2xl">Rock-Paper-Scissors</h2>
+                        <p>The first project where I could put together a few of the things I'd learnt up until now.</p>
+                        <p>In the past I'd done this in python, but this was an opportunity to apply DOM manipulation alongside writing functions in JavaScript.</p>
+                        <p>In this exercise I realised that I could add and remove elemnents to a page with ease, but that I was running into issues with the scope of my variables and where I was returning them.</p>
+                    </div>
+                    <div id="rock-paper-scissors">
+                        <div class="gameplay">
+                            <div id = 'choices'></div>
+                            <div id = 'rounds'></div>
+                            <div id = 'winner'></div>
+                        </div>
+                    </div>
                 </div>
 
 
+                <div class="flex">
+                    <div class="px200px">
+                        <h1>Etch-A-Sketch!</h1>
+                    </div>
+                    <div id="etch-a-sketch">
+                        <div class="block">
+                            <div class="options">
+                                <div>
+                                    <p>What colour would you like?</p>
+                                    <input class="colorInput" type="color">
+                                    <button class="changeColor">Paint</button>
+                                </div>
+                                <div>
+                                    <p>Grid Size:</p>
+                                    <input class="gridSize">
+                                    <button class="changeGrid">Change Grid</button>
+                                </div>
+                            </div>
+                            <div id="containerDiv">
+                                <div id="container"> <!-- block of divs-->
+                                </div>
+                            </div>   
+                        </div>
+                </div>
+
+                </div>
             </div>
             
         </div>
