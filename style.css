@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-/* UNIVERSAL */
+/**************** UNIVERSAL ****************/
 * {
     box-sizing: border-box;
 }
@@ -15,12 +15,11 @@ body {
 }
 
 a {
-    color: #011e40;
     text-decoration: none;
 }
 
 
-/* COLOURS */
+/**************** COLOURS ****************/
 .default-bck-colour {
     background-color: #ebddd1
 }
@@ -29,33 +28,68 @@ a {
     color: #081849;
 }
 
-.primary {
+.bottom-border {
+    border-bottom: 1px solid rgba(36, 29, 24, 0.2);
+}
+
+.top-border {
+    border-top: 1px solid rgba(36, 29, 24, 0.2)
+}
+
+
+/* FOR BACKGROUNDS */
+.primary-bck {
     background-color: #fbb679;
 }
 
-#opaque-primary {
+#opaque-primary-bck {
     background-color: rgba(251, 182, 121, 0.2);
 }
 
-.secondary {
+.secondary-bck {
     background-color: #113997;
 }
 
-#opaque-secondary {
+#opaque-secondary-bck {
     background-color: rgba(17, 57, 151, 0.15);
 }
 
-.accent {
+.accent-bck {
+    background-color: #873170;
+}
+
+/* FOR TEXT */
+
+.primary-txt {
+    color: #fbb679;
+}
+
+#opaque-primary-txt  {
+    color: rgba(251, 182, 121, 0.2);
+}
+
+.secondary-txt {
+    color: #113997;
+}
+
+#opaque-secondary-txt {
+    color: rgba(17, 57, 151, 0.15);
+}
+
+.accent-txt {
     color: #873170;
 }
+
 .opaque {
     opacity: 30%;
 }
+.hero button .left:hover {
+    transform: rotate(-15deg);
+}
 
 
 
-
-/* FONTS */
+/**************** FONTS ****************/
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -78,7 +112,7 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 20px
 }
 
 p {
@@ -87,6 +121,7 @@ p {
 
 small {
     font-size: 14px;
+    color: #873170;
 }
 
 .intro-text p {
@@ -94,10 +129,20 @@ small {
 }
 
 
+/**************** LAYOUTS/SPACING ****************/
+.container {
+    max-width: 1400px;
+    width: min(100% - 64px, 1400px);
+    margin: 0px auto;
+}
 
-/* LAYOUTS/SPACING */
+
 .flex {
     display: flex;
+}
+
+.centre-text {
+    text-align: center;
 }
 
 .centre-vertical {
@@ -121,10 +166,27 @@ small {
 }
 
 
+/* EFFECTS */
 
-/* INDIVIDUAL SECTIONS */
+.left-tilt {
+    transition: transform 0.2s 0s;
+}
+.left-tilt:hover {
+    transform: rotate(-15deg);
+}
+
+.right-tilt {
+    transition: transform 0.2s 0s;
+}
+.right-tilt:hover {
+    transform: rotate(15deg);
+}
+
+
+/**************** INDIVIDUAL SECTIONS ***************/ 
+
+/* HEADER */
 header {
-    border-bottom: 1px solid #893172;
     font-size: 20px;
 }
 
@@ -132,13 +194,6 @@ header a {
     text-decoration: none;
     color: #081849;
 }
-
-.container {
-    max-width: 1400px;
-    width: min(100% - 64px, 1400px);
-    margin: 0px auto;
-}
-
 
 
 /* HEADER DROPDOWN BUTTON */
@@ -163,6 +218,7 @@ header a {
     background-color: #ebddd1;
     border-radius: 5px;
     min-width: 200px;
+    right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,7 +237,29 @@ header a {
   display: block;
 }
 
+/* HERO */
 
+.hero button {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px 0px rgba(0 , 0 , 0 , 0.2);
+    margin-right: 10px;
+}
+
+.hero img {
+    max-width: 600px;
+}
+
+.hero a {
+    color: #081849;
+}
+
+.hero .primary-txt a {
+    color:#fbb679
+}
 
 /* TIMELINE CARDS   https://www.youtube.com/watch?v=t5AE66WgQD0 */
 .borderbox-timeline {
@@ -200,7 +278,13 @@ header a {
     background-color: #fbb679;
     position: relative;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
+.text-box:hover {
+    transform: scale(1.005);
+}
+
 
 .left-card {
     left: 0;
@@ -229,7 +313,7 @@ header a {
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #fbb679;
+    background: #873170;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -244,7 +328,7 @@ header a {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid white;
+    border-left: 15px solid #fbb679;
     right: -15px;
 }
 
@@ -256,12 +340,12 @@ header a {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid white;
+    border-right: 15px solid #fbb679;
     left: -15px;
 }
 
 
-/* PROJECTS */
+/**************** PROJECTS ****************/
 
 #etch-a-sketch {
     h1 {
@@ -295,19 +379,15 @@ header a {
 }
 
 
-
-
 /* CARD DESIGN */
-.hero img {
-    max-width: 600px;
-}
 
 
 
 
 
 
-/* MOBILE */
+
+/**************** MOBILE ****************/
 @media screen and (max-width: 600px) {
 
     /* HERO LAYOUT */
