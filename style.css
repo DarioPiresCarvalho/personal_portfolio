@@ -109,10 +109,11 @@ h2 {
 
 h3 {
     font-size: 24px;
+    color: #873170;
 }
 
 h4 {
-    font-size: 20px
+    font-size: 20px;
 }
 
 p {
@@ -121,7 +122,6 @@ p {
 
 small {
     font-size: 14px;
-    color: #873170;
 }
 
 .intro-text p {
@@ -136,13 +136,21 @@ small {
     margin: 0px auto;
 }
 
-
 .flex {
     display: flex;
 }
 
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
 .centre-text {
     text-align: center;
+}
+
+.centre-horizontal {
+    justify-content: center;
 }
 
 .centre-vertical {
@@ -151,6 +159,10 @@ small {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .gap-10px {
@@ -163,6 +175,10 @@ small {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.rounded-corners-5px {
+    border-radius: 5px;
 }
 
 
@@ -182,6 +198,11 @@ small {
     transform: rotate(15deg);
 }
 
+
+.underline {
+    text-decoration: underline solid 1px #873170;
+    text-underline-offset: 20px;
+}
 
 /**************** INDIVIDUAL SECTIONS ***************/ 
 
@@ -251,6 +272,8 @@ header a {
 
 .hero img {
     max-width: 600px;
+    border-radius: 50%;
+    border: 2px solid #081849;
 }
 
 .hero a {
@@ -261,7 +284,8 @@ header a {
     color:#fbb679
 }
 
-/* TIMELINE CARDS   https://www.youtube.com/watch?v=t5AE66WgQD0 */
+/* JOURNEY CARDS   https://www.youtube.com/watch?v=t5AE66WgQD0 */
+
 .borderbox-timeline {
     position: relative;
     margin: 10px auto;
@@ -273,8 +297,16 @@ header a {
     position: relative;
 }
 
+.timeline-item h4 {
+    font-style: italic;
+}
+
+.timeline-item small {
+    color: #113997;
+}
+
 .text-box {
-    padding: 50px;
+    padding: 6px 50px;
     background-color: #fbb679;
     position: relative;
     border-radius: 10px;
@@ -282,7 +314,7 @@ header a {
 }
 
 .text-box:hover {
-    transform: scale(1.005);
+    transform: scale(1.005)
 }
 
 
@@ -294,18 +326,19 @@ header a {
     left: 50%;
 }
 
-.timeline-item img {
-    width: 40px;
-    height: 40px;
+.timelogo {
+    background-color: #873170;
+    width: 30px;
+    height: 30px;
     position: absolute;
     border-radius: 50%;
-    right: -20px;
+    right: -15px;
     top: 42px;
     z-index: 10;
 }
 
-.right-card img {
-    left: -20px
+.right-card .timelogo {
+    left: -15px
 }
 
 .borderbox-timeline::after {
@@ -323,7 +356,7 @@ header a {
 .left-container-arrow {
     width: 0;
     height: 0;
-    top: 36px;
+    top: 32px;
     position: absolute;
     z-index: 1;
     border-top: 15px solid transparent;
@@ -335,7 +368,7 @@ header a {
 .right-container-arrow {
     width: 0;
     height: 0;
-    top: 36px;
+    top: 32px;
     position: absolute;
     z-index: 1;
     border-top: 15px solid transparent;
@@ -346,6 +379,50 @@ header a {
 
 
 /**************** PROJECTS ****************/
+
+
+/* PROJECT CARD DESIGN */
+
+.max-width {
+    max-width: 50%;
+}
+
+
+/* ROCK PAPER SCISSORS */
+#rock-paper-scissors {
+    background-color: #fbb679;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gameplay h1 {
+    font-size: 36px;
+    color: #081849;
+}
+
+#choices button {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#choices .rock {
+    background-color: #113997;
+    color: #fbb679;
+}
+
+#choices .paper {
+    background-color: white;
+}
+
+#choices .scissors {
+    background-color: #ebddd1;
+}
+
+
+
 
 #etch-a-sketch {
     h1 {
@@ -358,7 +435,7 @@ header a {
         gap: 20px;
     }
 
-    p{
+    p {
         margin: 0px;
     }
 
@@ -379,7 +456,6 @@ header a {
 }
 
 
-/* CARD DESIGN */
 
 
 
@@ -420,12 +496,12 @@ header a {
         left: 0;
     }
 
-    .left-card img, .right-card img {
-        left: 10px;
+    .left-card .timelogo, .right-card .timelogo {
+        left: 16px;
     }
 
     .left-container-arrow, .right-container-arrow {
-        border-right: 15px solid white;
+        border-right: 15px solid #fbb679;
         border-left: 0px;
         left: -15px
     }

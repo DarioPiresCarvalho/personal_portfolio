@@ -49,9 +49,9 @@
 
             <!-- Timeline -->
             <section class="journey">
-                <div class="container top-border">
-                    <h2 class="centre-text">My Journey</h2>
-                    <div class="intro-text padding-20-topbottom">
+                <div class="container top-border bottom-border padding-20-topbottom">
+                    <h2 class="centre-text underline">My Journey</h2>
+                    <div class="intro-text" >
                         <p>I'm a positive and deeply curious individual, passionate about solving problems and getting the job done while having fun. I want to create systems that work as expected without adding frustration for the end user.</p>
                         <p>What you see here is my first attempt at creating a a place where I can share my journey to becoming a software engineer. A place to share how I got here, what I've done so far to progress my learning, and future plans too.</p>
                         <p>My first priority is to gain a good foundational knowledge of web technologies such as HTML, CSS and JavaScript via the Foundations course of The Odin Project (more on this below) before I move onto the Full-Stack course and starting to build systems for problems I care about.</p>
@@ -61,18 +61,18 @@
                     
                     <div class="borderbox-timeline">
                         <article class="timeline-item left-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>Gap Year</h3>
                                 <small>2017 - 2018</small>
                                 <p>I worked various jobs in my gap year, picking up work in warehouse and kitchens to save as much as I could before I went to University. Thank god I did, because University turned out to be much more expensive than I realised.</p>
                                 <p>The dream of building my own PC started here, and in my spare time I became obsessed with how computers were built. I had to settle for a Build Your Own 3D-Printer subscription and I started playing around making basic models in CAD software.</p>
-                                <span class="left-container-arrow"></span>
+                                <span class="left-container-arrow"></span>                                
                             </div>
                         </article>
 
                         <article class="timeline-item right-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>BA Business Management</h3>
                                 <h4>University of Leeds</h4>
@@ -84,7 +84,7 @@
                         </article>
 
                         <article class="timeline-item left-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>Bartender</h3>
                                 <h4>Estabulo Rodizio Bar & Grill</h4>
@@ -97,7 +97,7 @@
                         </article>
 
                         <article class="timeline-item right-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>Bartender</h3>
                                 <h4>Turtle Bay Hospitality Limited</h4>
@@ -111,7 +111,7 @@
                         </article>
 
                         <article class="timeline-item left-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>Fieldwork Executive</h3>
                                 <h4>Blue Yonder Research LTD</h4>
@@ -125,7 +125,7 @@
 
 
                         <article class="timeline-item right-card">
-                            <img src="./IMG_5092.jpeg">
+                            <div class="timelogo"></div>
                             <div class="text-box">
                                 <h3>Recipe Suggestion App</h3>
                                 <h4>Python Practice</h4>
@@ -145,28 +145,33 @@
 
             <!-- Projects -->
             <section class="projects">
-                <div class="container">
+                <div class="container padding-20-topbottom">
                     <!-- MAYBE NEW TITLE TO MATCH CONTENT I.E. SPECIFICALLY LEARNING -->
-                    <h2>Featured Projects</h2> 
-                    <div class="intro-text">
+                    <h2 class="centre-text underline">Featured Projects</h2> 
+                    <div class="intro-text centre-text">
                         <p>Here is some of the work I've been taking on to teach myself more about programming.</p>
                     </div>
 
-                    <article class="project-card">
-                        <h3>Rock-Paper-Scissors</h3>
-                        <p>The first project where I could put together a few of the things I'd learnt up until now.</p>
-                        <p>In the past I'd done this in python, but this was an opportunity to apply DOM manipulation alongside writing functions in JavaScript.</p>
-                        <p>In this exercise I realised that I could add and remove elements to a page with ease, but that I was running into issues with the scope of my variables and where I was returning them.</p>
-                        <div id="rock-paper-scissors">
-                            <div class="gameplay">
-                                <div id = 'choices'></div>
-                                <div id = 'rounds'></div>
-                                <div id = 'winner'></div>
+                    <article class="project-card padding-20-topbottom rounded-corners-5px" id="opaque-secondary-bck">
+                        <h3 class="centre-text">Rock-Paper-Scissors</h3>
+                        <div class="flex space-around centre-vertical">
+                            <div class="max-width">
+                                <p>The first project where I could put together a few of the things I'd learnt up until now.</p>
+                                <p>In the past I'd done this in python, but this was an opportunity to apply DOM manipulation alongside writing functions in JavaScript.</p>
+                                <p>In this exercise I realised that I could add and remove elements to a page with ease, but that I was running into issues with the scope of my variables and where I was returning them.</p>
+                            </div>
+                            <div id="rock-paper-scissors">
+                                <div class="gameplay centre-text flex-vertical centre-vertical">
+                                    <p>Can you reach 5 points before the computer?</p>
+                                    <div id = 'choices' class="flex gap-10px"></div>
+                                    <div id = 'rounds'></div>
+                                    <div id = 'winner'></div>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card padding-20-topbottom ">
                         <h3>Etch-A-Sketch</h3>
                         <p>An interactive drawing grid where users can customise the grid size and choose their own colours. This project gave me more experience working with the DOM, dynamically creating elements and handling user input through event listeners.</p>
                         <div id="etch-a-sketch">
@@ -196,8 +201,8 @@
 
 
         <footer>
-            <div class="container">
-                <p><em>Mais vale tarde, do que nunca!</em></p>
+            <div class="container top-border padding-20-topbottom">
+                <p class="centre-text"><em>Mais vale tarde, do que nunca!</em></p>
             </div>
         </footer>
 

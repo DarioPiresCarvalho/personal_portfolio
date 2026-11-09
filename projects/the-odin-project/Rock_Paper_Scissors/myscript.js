@@ -28,11 +28,11 @@ function getHumanChoice(button_id) {
         console.loeg("Pick a valid choice");
         return;
     } else if (human_choice == 1) {
-        player_choice.textContent = "Player picks: Rock";
+        player_choice.textContent = "You picked: Rock";
     } else if (human_choice == 2) {
-        player_choice.textContent = "Player picks: Paper";
+        player_choice.textContent = "You picked: Paper";
     } else {
-        player_choice.textContent = "Player picks: Scissors"
+        player_choice.textContent = "You picked: Scissors"
     }
     return human_choice;
 }
@@ -181,9 +181,6 @@ btn.forEach( btn => {
 
 const rounds = document.querySelector('#rounds')
 
-const results = document.createElement('p');
-rounds.appendChild(results)
-
 const player_choice = document.createElement('p')
 rounds.appendChild(player_choice)
 
@@ -192,6 +189,9 @@ rounds.appendChild(computer)
 
 const outcome = document.createElement('p')
 rounds.appendChild(outcome)
+
+const results = document.createElement('p');
+rounds.appendChild(results)
 
 const winner = document.querySelector('#winner')
 const gameOver = document.createElement('h1')
