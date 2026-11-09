@@ -122,6 +122,7 @@ function restart_game() {
     if (game_state == 'inactive') {
         const restart_button = document.createElement('button')
         restart_button.textContent = "Want to play again?"
+        restart_button.classList.add('reset-button')
         winner.appendChild(restart_button)
         
         restart_button.addEventListener('click', () => { 
@@ -151,18 +152,21 @@ const rock_button = document.createElement('button');
 rock_button.textContent = 'Rock'
 rock_button.setAttribute('id', '1')
 rock_button.classList.add('rock')
+rock_button.classList.add('left-tilt')
 choices.appendChild(rock_button);
 
 const paper_button = document.createElement('button');
 paper_button.textContent = 'Paper'
 paper_button.setAttribute('id', '2')
 paper_button.classList.add('paper')
+paper_button.classList.add('right-tilt')
 choices.appendChild(paper_button);
 
 const scissors_button = document.createElement('button');
 scissors_button.textContent = 'Scissors'
 scissors_button.setAttribute('id', '3')
 scissors_button.classList.add('scissors')
+scissors_button.classList.add('left-tilt')
 choices.appendChild(scissors_button);
 
 

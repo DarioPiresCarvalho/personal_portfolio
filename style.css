@@ -165,6 +165,10 @@ small {
     justify-content: space-around;
 }
 
+.margin-20-topbottom {
+    margin: 20px 0px;
+}
+
 .gap-10px {
     gap: 10px;
 }
@@ -273,7 +277,7 @@ header a {
 .hero img {
     max-width: 600px;
     border-radius: 50%;
-    border: 2px solid #081849;
+    border: 1px solid #081849;
 }
 
 .hero a {
@@ -284,7 +288,11 @@ header a {
     color:#fbb679
 }
 
-/* JOURNEY CARDS   https://www.youtube.com/watch?v=t5AE66WgQD0 */
+footer p {
+    font-size: 24px;
+}
+
+/**************** JOURNEY CARDS   https://www.youtube.com/watch?v=t5AE66WgQD0 *************/
 
 .borderbox-timeline {
     position: relative;
@@ -378,10 +386,18 @@ header a {
 }
 
 
+
+
+
+
 /**************** PROJECTS ****************/
 
 
 /* PROJECT CARD DESIGN */
+
+.project-card {
+    padding: 20px;
+}
 
 .max-width {
     max-width: 50%;
@@ -390,14 +406,18 @@ header a {
 
 /* ROCK PAPER SCISSORS */
 #rock-paper-scissors {
-    background-color: #fbb679;
     padding: 20px;
     border-radius: 10px;
+}
+
+#rock-paper-scissors button {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .gameplay h1 {
     font-size: 36px;
     color: #081849;
+    margin: 10px;
 }
 
 #choices button {
@@ -409,18 +429,27 @@ header a {
 }
 
 #choices .rock {
+    background-color: #ebddd1;
+}
+
+#choices .paper {
+    background-color: #fbb679;
+}
+
+#choices .scissors {
     background-color: #113997;
     color: #fbb679;
 }
 
-#choices .paper {
-    background-color: white;
+.reset-button {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #873170;
+    color: #fbb679;
 }
-
-#choices .scissors {
-    background-color: #ebddd1;
-}
-
 
 
 
@@ -452,6 +481,11 @@ header a {
 
     .changeGrid {
         display: block;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 5px 10px;
     }
 }
 

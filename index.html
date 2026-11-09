@@ -19,9 +19,9 @@
 
                 <div class="nav-links flex centre-vertical gap-10px">
                     <div class="dropdown">
-                        <button class="dropbtn">Projects</button>
+                        <button class="dropbtn">More</button>
                         <div class="dropdown-content">
-                            <a href="./about/index.html">About</a>
+                            <a>To Be Continued...</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                         <p>That's where the interest to programme began, and it became what I wanted to pursue for the last couple years, but could never quite find the time for it. This year, with the support of my amazing partner, I'm finally taking the first step to achieving this dream!</p>
                     </div>
                     
-                    <div class="borderbox-timeline">
+                    <div class="borderbox-timeline margin-20-topbottom">
                         <article class="timeline-item left-card">
                             <div class="timelogo"></div>
                             <div class="text-box">
@@ -152,10 +152,10 @@
                         <p>Here is some of the work I've been taking on to teach myself more about programming.</p>
                     </div>
 
-                    <article class="project-card padding-20-topbottom rounded-corners-5px" id="opaque-secondary-bck">
+                    <article class="project-card padding-20-topbottom rounded-corners-5px margin-20-topbottom" id="opaque-primary-bck">
                         <h3 class="centre-text">Rock-Paper-Scissors</h3>
                         <div class="flex space-around centre-vertical">
-                            <div class="max-width">
+                            <div class="max-width rps-intro">
                                 <p>The first project where I could put together a few of the things I'd learnt up until now.</p>
                                 <p>In the past I'd done this in python, but this was an opportunity to apply DOM manipulation alongside writing functions in JavaScript.</p>
                                 <p>In this exercise I realised that I could add and remove elements to a page with ease, but that I was running into issues with the scope of my variables and where I was returning them.</p>
@@ -171,27 +171,31 @@
                         </div>
                     </article>
 
-                    <article class="project-card padding-20-topbottom ">
-                        <h3>Etch-A-Sketch</h3>
-                        <p>An interactive drawing grid where users can customise the grid size and choose their own colours. This project gave me more experience working with the DOM, dynamically creating elements and handling user input through event listeners.</p>
-                        <div id="etch-a-sketch">
-                            <div class="block">
-                                <div class="options">
-                                    <div>
-                                        <p>What colour would you like?</p>
-                                        <input class="colorInput" type="color">
-                                        <button class="changeColor">Paint</button>
+                    <article class="project-card padding-20-topbottom margin-20-topbottom rounded-corners-5px" id="opaque-primary-bck">
+                        <h3 class="centre-text">Etch-A-Sketch</h3>
+                        <div class="flex space-around">
+                            <div class="max-width">
+                                <p>An interactive drawing grid where users can customise the grid size and choose their own colours. This project gave me more experience working with the DOM, dynamically creating elements and handling user input through event listeners.</p>
+                            </div>
+                            <div id="etch-a-sketch">
+                                <div class="block flex-vertical gap-10px">
+                                    <div class="options">
+                                        <div>
+                                            <p>What colour would you like?</p>
+                                            <input class="colorInput" type="color">
+                                            <button class="changeColor">Paint</button>
+                                        </div>
+                                        <div>
+                                            <p>Grid Size:</p>
+                                            <input class="gridSize">
+                                            <button class="changeGrid">Change Grid</button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p>Grid Size:</p>
-                                        <input class="gridSize">
-                                        <button class="changeGrid">Change Grid</button>
-                                    </div>
+                                    <div id="containerDiv">
+                                        <div id="container"> <!-- block of divs-->
+                                        </div>
+                                    </div>   
                                 </div>
-                                <div id="containerDiv">
-                                    <div id="container"> <!-- block of divs-->
-                                    </div>
-                                </div>   
                             </div>
                         </div>
                     </article>
