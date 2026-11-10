@@ -177,6 +177,10 @@ small {
     padding: 20px 0px;
 }
 
+.padding-50-around-desktop {
+    padding: 50px;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -184,6 +188,8 @@ small {
 .rounded-corners-5px {
     border-radius: 5px;
 }
+
+
 
 
 /* EFFECTS */
@@ -563,6 +569,11 @@ footer p {
 
     #mobile-grid {
         width: 200px;
+    }
+
+
+    .padding-50-around-desktop {
+        padding: 0px;
     }
 
 }
