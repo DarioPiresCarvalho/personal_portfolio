@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 84px;
 }
 
 
@@ -276,8 +276,7 @@ header a {
 
 .hero img {
     max-width: 600px;
-    border-radius: 50%;
-    border: 1px solid #081849;
+    flex: auto;
 }
 
 .hero a {
@@ -399,8 +398,12 @@ footer p {
     padding: 20px;
 }
 
-.max-width {
+.max-width-50 {
     max-width: 50%;
+}
+
+.max-width-30 {
+    max-width: 30%;
 }
 
 
@@ -451,7 +454,7 @@ footer p {
     color: #fbb679;
 }
 
-
+/* ETCHE A SKETCH */
 
 #etch-a-sketch {
     h1 {
@@ -498,9 +501,17 @@ footer p {
 
 
 /**************** MOBILE ****************/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+
+    h1 {
+        font-size: 64px;
+    }
 
     /* HERO LAYOUT */
+    .hero {
+        text-align: center;
+    }
+
     .hero .container{
         flex-direction: column-reverse;
     }
@@ -538,6 +549,20 @@ footer p {
         border-right: 15px solid #fbb679;
         border-left: 0px;
         left: -15px
+    }
+
+
+    /* PROJECT CARDS */
+    #project-card-mobile {
+        flex-direction: column;
+    }
+
+    .max-width-50 {
+        max-width: fit-content;
+    };
+
+    #mobile-grid {
+        width: 200px;
     }
 
 }

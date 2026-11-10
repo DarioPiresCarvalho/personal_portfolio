@@ -3,8 +3,20 @@ const containerDiv = document.querySelector('#containerDiv')
 const container = document.createElement('div')
 container.setAttribute('id','container')
 containerDiv.appendChild(container)
-container.style.width = "500px"
-let containerWidth = 500
+let containerWidth = 0
+
+let screenWidth = screen.width
+
+if (screenWidth > 600) {
+    console.log(screenWidth)
+    container.style.width = "500px"
+    containerWidth = 500
+} else {
+    console.log(screenWidth)
+    container.style.width = "340px"
+    containerWidth = 340
+}
+
 
 let defaultGrid = 16 // squares per side
 let defaultColor = 'red'

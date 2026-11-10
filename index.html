@@ -36,13 +36,13 @@
                     <div class="hero_content wrap">
                         <h1>Dário Carvalho</h1>
                         <h3>Self-taught Developer</h3>
-                        <h4 class="opaque">Curious by nature. Always learning something.</h4>
+                        <h4 class="opaque">Curious by nature. Improving by choice.</h4>
                         <div class="socials">
                             <a href="https://github.com/DarioPiresCarvalho"><button class="primary-bck left-tilt">GitHub</button></a>
                             <a href="https://www.linkedin.com/in/dario-carvalho/"><button class="secondary-bck primary-txt right-tilt">LinkedIn</button></a>
                         </div>
                     </div>
-                    <img src="./IMG_5092.jpeg" alt="Portrait of Dario">
+                    <img src="./IMG_5171.jpeg" alt="Portrait of Dario">
                 </div>   
             </section>
 
@@ -149,13 +149,13 @@
                     <!-- MAYBE NEW TITLE TO MATCH CONTENT I.E. SPECIFICALLY LEARNING -->
                     <h2 class="centre-text underline">Featured Projects</h2> 
                     <div class="intro-text centre-text">
-                        <p>Here is some of the work I've been taking on to teach myself more about programming.</p>
+                        <p>It's thanks to The Odin Project that I was able to build this site, but it's all been built using HTML and CSS.</p>
                     </div>
 
                     <article class="project-card padding-20-topbottom rounded-corners-5px margin-20-topbottom" id="opaque-primary-bck">
                         <h3 class="centre-text">Rock-Paper-Scissors</h3>
-                        <div class="flex space-around centre-vertical">
-                            <div class="max-width rps-intro">
+                        <div class="flex space-around centre-vertical" id="project-card-mobile">
+                            <div class="max-width-50 rps-intro">
                                 <p>The first project where I could put together a few of the things I'd learnt up until now.</p>
                                 <p>In the past I'd done this in python, but this was an opportunity to apply DOM manipulation alongside writing functions in JavaScript.</p>
                                 <p>In this exercise I realised that I could add and remove elements to a page with ease, but that I was running into issues with the scope of my variables and where I was returning them.</p>
@@ -173,8 +173,8 @@
 
                     <article class="project-card padding-20-topbottom margin-20-topbottom rounded-corners-5px" id="opaque-primary-bck">
                         <h3 class="centre-text">Etch-A-Sketch</h3>
-                        <div class="flex space-around">
-                            <div class="max-width">
+                        <div class="flex space-between" id="project-card-mobile">
+                            <div class="max-width-50">
                                 <p>An interactive drawing grid where users can customise the grid size and choose their own colours. This project gave me more experience working with the DOM, dynamically creating elements and handling user input through event listeners.</p>
                             </div>
                             <div id="etch-a-sketch">
@@ -188,7 +188,7 @@
                                         <div>
                                             <p>Grid Size:</p>
                                             <input class="gridSize">
-                                            <button class="changeGrid">Change Grid</button>
+                                            <button class="changeGrid" id="mobile-grid">Change Grid</button>
                                         </div>
                                     </div>
                                     <div id="containerDiv">
@@ -201,6 +201,35 @@
                     </article>
                 </div>
             </section>
+
+            <!-- FUTURE PLANS -->
+
+            <section class="upcoming ">
+                <div class="container">
+                    <h2 class="centre-text underline">Future Plans</h2>
+                    
+                    <div class="flex space-between" id="project-card-mobile">
+                        <article >
+                            <h3>Calculator</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel magnam, expedita tempore quae cum nihil! Iste pariatur deleniti necessitatibus porro ipsa recusandae eos, ipsum, sunt nemo quos deserunt possimus mollitia.</p>
+                        </article>
+
+                        <article>
+                            <h3>Moving To Sheffield!</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel magnam, expedita tempore quae cum nihil! Iste pariatur deleniti necessitatibus porro ipsa recusandae eos, ipsum, sunt nemo quos deserunt possimus mollitia.</p>
+                        </article>
+
+                        <article>
+                            <h3>Dark Mode + Animations</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel magnam, expedita tempore quae cum nihil! Iste pariatur deleniti necessitatibus porro ipsa recusandae eos, ipsum, sunt nemo quos deserunt possimus mollitia.</p>
+                        </article>
+                    </div>
+                </div>
+                
+                
+            </section>
+
+
         </main>
 
 

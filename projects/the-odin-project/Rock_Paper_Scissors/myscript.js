@@ -25,7 +25,7 @@ function getComputerChoice() {
 function getHumanChoice(button_id) {
     let human_choice =  button_id // Number(prompt("Pick your weapon (enter number): 1. Rock | 2. Paper | 3. Scissors"));
     if (human_choice == "" || human_choice > 3 || human_choice < 1 || isNaN(human_choice)) {
-        console.loeg("Pick a valid choice");
+        console.log("Pick a valid choice");
         return;
     } else if (human_choice == 1) {
         player_choice.textContent = "You picked: Rock";
